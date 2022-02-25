@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+footer {
+    color: slategray;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    left: 42%;
+    z-index: -1;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+.note {
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 4rem;
+    user-select: none;
+}
+
+.pads{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+}
+/* .pads is the class div that holds all of the individual pads. > selects all of those divs. */
+
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex: 1;
+    /* border-radius: 50%; */
+}
+
+.pad1 {
+    background: red;
+}
+.pad2 {
+    background: orange;
+}
+.pad3 {
+    background: rgb(212, 212, 22);
+}
+.pad4 {
+    background: rgb(95, 221, 95);
+}
+.pad5 {
+    background: green;
+}
+.pad6 {
+    background: rgb(85, 20, 128);
+}
+.pad7 {
+    background: rgb(218, 72, 205);
+}
+.pad8 {
+    background: red;
+}
+
+.visual > div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    transform: scale(1);
+    z-index: -1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
